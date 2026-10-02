@@ -1,4 +1,4 @@
-/* Estos son algunos colores que uso en la página */
+/* estos son algunos colores que utilizee en la página */
 :root {
     --color-fondo: #f4f0e8;
     --color-caja: white;
@@ -7,7 +7,7 @@
     --color-boton: #e58b63;
 }
 
-/* Estilos generales */
+/* estilos generales que intente poner */
 * {
     box-sizing: border-box;
 }
@@ -52,7 +52,6 @@ nav ul {
 }
 
 nav a {
-    display: inline-block;
     padding: 7px 10px;
     color: var(--color-enlace);
 }
