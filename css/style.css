@@ -1,0 +1,135 @@
+/* Estos son algunos colores que uso en la página */
+:root {
+    --color-fondo: #f4f0e8;
+    --color-caja: white;
+    --color-texto: #333333;
+    --color-enlace: #315f72;
+    --color-boton: #e58b63;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: var(--color-caja);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-enlace);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 7px 10px;
+    color: var(--color-enlace);
+}
+
+nav a:hover {
+    color: #a4492e;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--color-boton);
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.presentacion {
+    text-align: center;
+}
+
+.proyecto {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f7f3;
+    border: 1px solid #dddddd;
+}
+
+video,
+audio {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-boton);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c76e48;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    body {
+        padding: 30px;
+    }
+
+    .proyecto {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+}
